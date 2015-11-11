@@ -1,7 +1,5 @@
 from pymarketo.api import MarketoConnection
-from pymarketo.exceptions import (
-    InvalidCookieException,
-)
+from pymarketo.exceptions import InvalidCookieException
 
 
 class MarketoClientBase(object):

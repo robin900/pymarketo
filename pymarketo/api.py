@@ -7,9 +7,7 @@ import json
 
 import requests
 
-from pymarketo.exceptions import (
-    MarketoAPIException,
-)
+from pymarketo.exceptions import MarketoAPIException
 
 
 class MarketoConnection(object):
