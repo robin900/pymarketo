@@ -1,7 +1,7 @@
 # pymarketo
 
 A pythonic interface to the Marketo REST API.
-This project succeeds the Python SOAP interface, now called [pymarketo-soap](https://github.com/jswinarton/pymarketo-soap)
+This project succeeds the Python SOAP interface, now called [pymarketo-soap](https://github.com/jswinarton/pymarketo-soap).
 
 ## Get started
 
@@ -34,4 +34,12 @@ client.update_lead({
 
 client.request_campaign(lead_id=237, campaign_id=1234)
 # None
+```
+
+## Installation
+
+This library is currently an alpha build and is not available on PyPI.
+
+```
+pip install git+git://github.com/jswinarton/pymarketo.git
 ```
