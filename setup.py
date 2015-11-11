@@ -11,4 +11,5 @@ setup(
     description='Python interface to the Marketo REST API',
     author='Jeremy Swinarton',
     author_email='jeremy@swinarton.com',
+    license='MIT',
 )
