@@ -1,2 +1,3 @@
 pymarketo.egg-info/
 *.pyc
+.DS_Store
