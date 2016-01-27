@@ -6,7 +6,10 @@ setup(
     name='pymarketo',
     version=VERSION,
     packages=['pymarketo'],
-    install_requires=['requests>=2.8.1'],
+    install_requires=[
+        'requests>=2.8.1',
+        'six'
+        ],
 
     description='Python interface to the Marketo REST API',
     author='Jeremy Swinarton',

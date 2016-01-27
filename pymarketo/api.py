@@ -6,6 +6,7 @@ import os
 import json
 
 import requests
+import six
 
 from pymarketo.exceptions import MarketoAPIException
 
@@ -82,7 +83,7 @@ class MarketoConnection(object):
         result = data.get('result', [])
         for i, item in enumerate(result):
             # Strip 'None' fields from the response lead data.
-            result[i] = {k: v for k, v in item.iteritems() if v is not None}
+            result[i] = {k: v for k, v in six.iteritems(item) if v is not None}
 
             # If 'cookies' is part of lead data, split into a list by comma
             # and add the prefix to the front.
