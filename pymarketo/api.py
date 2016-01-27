@@ -123,4 +123,4 @@ class MarketoConnection(object):
         except requests.ConnectionError:
             raise MarketoAPIException('Could not connect to server')
         data = r.json()
-        return self._process(data)
+        return self.process(data)
